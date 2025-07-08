@@ -1,44 +1,140 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-black text-white h-full">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Terms of Use | Geolysis</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Terms of Use</h1>
-    <p><strong>Effective Date:</strong> <time datetime="2025-07-07">July 07, 2025</time></p>
 
-    <p>
-      Welcome to <strong>Geolysis</strong>! These Terms of Use (“Terms”) govern your access to and use of our web
-      application located at
-      <a href="https://excel.geolysis.io" target="_blank" rel="noopener noreferrer">https://excel.geolysis.io</a> (the
-      “Service”), operated by Geolysis (“we,” “our,” or “us”). By accessing or using the Service, you agree to be bound
-      by these Terms. If you do not agree, please do not use the Service.
-    </p>
+  <body class="flex flex-col min-h-screen bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="bg-black border-b border-neutral-800">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="flex items-center space-x-3">
+          <img src="/assets/logo.svg" alt="Geolysis logo" class="h-8 w-auto" />
+          <span class="text-xl font-semibold text-white">Geolysis</span>
+        </a>
+        <nav class="space-x-4 text-sm">
+          <a href="/" class="text-neutral-400 hover:text-white">Home</a>
+          <a href="/policies" class="text-neutral-400 hover:text-white">Policies</a>
+          <a href="https://excel.geolysis.io/support" class="text-neutral-400 hover:text-white">Support</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>1. Eligibility</h2>
-    <p>
-      By using this Service, you represent and warrant that you have the legal capacity to enter into a binding
-      agreement. There are no age restrictions on the use of this Service, but we do not knowingly collect information
-      from children under the age of 13.
-    </p>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-3xl mx-auto px-6 py-16">
+      <h1 class="text-4xl font-bold mb-4">Terms of Use</h1>
+      <p class="text-neutral-400 mb-6">
+        <strong class="text-white">Effective Date:</strong>
+        <time datetime="2025-07-07">July 07, 2025</time>
+      </p>
 
-    <h2>2. Account Registration</h2>
-    <p>
-      To use the Service, you must create an account. You agree to provide accurate and complete information, including
-      your full name and email address, and to keep this information up to date. You are responsible for maintaining the
-      confidentiality of your login credentials and for all activities that occur under your account.
-    </p>
+      <p class="mb-6">
+        Welcome to <strong>Geolysis</strong>! These Terms of Use (“Terms”) govern your access to and use of our web
+        application located at
+        <a
+          href="https://excel.geolysis.io"
+          class="text-blue-400 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://excel.geolysis.io
+        </a>
+        (the “Service”), operated by Geolysis (“we,” “our,” or “us”). By accessing or using the Service, you agree to be
+        bound by these Terms. If you do not agree, please do not use the Service.
+      </p>
 
-    <h2>3. Acceptable Use</h2>
-    <p>You agree not to:</p>
-    <ul>
-      <li>Use the Service for any unlawful or unauthorized purpose;</li>
-      <li>Access, tamper with, or use non-public areas of the Service or our systems;</li>
-      <li>Reverse eng</li>
-    </ul>
+      <h2 class="text-2xl font-semibold mt-10 mb-2">1. Eligibility</h2>
+      <p class="mb-6">
+        By using this Service, you represent and warrant that you have the legal capacity to enter into a binding
+        agreement. There are no age restrictions on the use of this Service, but we do not knowingly collect information
+        from children under the age of 13.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">2. Account Registration</h2>
+      <p class="mb-6">
+        To use the Service, you must create an account. You agree to provide accurate and complete information,
+        including your full name and email address, and to keep this information up to date. You are responsible for
+        maintaining the confidentiality of your login credentials and for all activities that occur under your account.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">3. Authentication</h2>
+      <p class="mb-6">
+        We use Microsoft Authentication Library (MSAL.js) to securely authenticate users through Microsoft's identity
+        platform. By registering and logging into the Service, you agree to comply with the authentication process and
+        any related security requirements.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">4. Acceptable Use</h2>
+      <p class="mb-4">You agree not to:</p>
+      <ul class="list-disc list-inside text-neutral-300 mb-6">
+        <li>Use the Service for any unlawful or unauthorized purpose;</li>
+        <li>Access, tamper with, or use non-public areas of the Service or our systems;</li>
+        <li>Reverse engineer, decompile, or disassemble any part of the Service;</li>
+        <li>Disrupt or interfere with the normal operation of the Service;</li>
+        <li>Use the Service to transmit any harmful or malicious content.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">5. Intellectual Property</h2>
+      <p class="mb-6">
+        All content, features, and functionality of the Service, including software, text, graphics, and logos, are
+        owned by Geolysis or our licensors and are protected by intellectual property laws. You may not use, reproduce,
+        or distribute any content without our prior written consent.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">6. Termination</h2>
+      <p class="mb-6">
+        We reserve the right to suspend or terminate your account and access to the Service at any time, without notice,
+        if you violate these Terms or engage in any conduct we deem harmful to other users or the Service.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">7. Disclaimer of Warranties</h2>
+      <p class="mb-6">
+        The Service is provided “as is” and “as available” without warranties of any kind, either express or implied. We
+        do not guarantee that the Service will be uninterrupted, error-free, or free from viruses or other harmful
+        components.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">8. Limitation of Liability</h2>
+      <p class="mb-6">
+        To the fullest extent permitted by law, Geolysis shall not be liable for any indirect, incidental, special, or
+        consequential damages arising out of your use of the Service.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">9. Changes to Terms</h2>
+      <p class="mb-6">
+        We may update these Terms from time to time. We will notify you of any material changes by posting the new Terms
+        on this page. Your continued use of the Service after changes constitute acceptance of the updated Terms.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">10. Governing Law</h2>
+      <p class="mb-6">
+        These Terms are governed by the laws of the State of Tennessee, USA, without regard to conflict of law
+        provisions.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">11. Contact Us</h2>
+      <p>
+        If you have any questions about these Terms, please contact us at
+        <a
+          href="https://excel.geolysis.io/support"
+          class="text-blue-400 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://excel.geolysis.io/support </a
+        >.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-neutral-800 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-8 text-center text-neutral-500 text-sm">
+        &copy; 2025 Geolysis. Licensed under <a href="LICENSE" class="underline hover:text-white">CC BY 4.0</a>.
+      </div>
+    </footer>
   </body>
 </html>
